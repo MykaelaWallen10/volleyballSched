@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB79CFE42B9E84260030A9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFE32B9E84260030A9C2 /* AppDelegate.swift */; };
+		BB79CFE62B9E84260030A9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */; };
+		BB79CFE82B9E84260030A9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFE72B9E84260030A9C2 /* ViewController.swift */; };
+		BB79CFEB2B9E84260030A9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB79CFE92B9E84260030A9C2 /* Main.storyboard */; };
+		BB79CFED2B9E84270030A9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB79CFEC2B9E84270030A9C2 /* Assets.xcassets */; };
+		BB79CFF02B9E84270030A9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB79CFEE2B9E84270030A9C2 /* LaunchScreen.storyboard */; };
+		BB79CFFB2B9E84280030A9C2 /* volleyballSchedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFFA2B9E84280030A9C2 /* volleyballSchedTests.swift */; };
+		BB79D0052B9E84280030A9C2 /* volleyballSchedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79D0042B9E84280030A9C2 /* volleyballSchedUITests.swift */; };
+		BB79D0072B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79D0062B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB79CFF72B9E84280030A9C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB79CFD82B9E84260030A9C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB79CFDF2B9E84260030A9C2;
+			remoteInfo = volleyballSched;
+		};
+		BB79D0012B9E84280030A9C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB79CFD82B9E84260030A9C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB79CFDF2B9E84260030A9C2;
+			remoteInfo = volleyballSched;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB79CFE02B9E84260030A9C2 /* volleyballSched.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = volleyballSched.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB79CFE32B9E84260030A9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB79CFE72B9E84260030A9C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB79CFEA2B9E84260030A9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB79CFEC2B9E84270030A9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB79CFEF2B9E84270030A9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB79CFF12B9E84270030A9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB79CFF62B9E84280030A9C2 /* volleyballSchedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = volleyballSchedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB79CFFA2B9E84280030A9C2 /* volleyballSchedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volleyballSchedTests.swift; sourceTree = "<group>"; };
+		BB79D0002B9E84280030A9C2 /* volleyballSchedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = volleyballSchedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB79D0042B9E84280030A9C2 /* volleyballSchedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volleyballSchedUITests.swift; sourceTree = "<group>"; };
+		BB79D0062B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volleyballSchedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB79CFDD2B9E84260030A9C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB79CFF32B9E84280030A9C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB79CFFD2B9E84280030A9C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB79CFD72B9E84260030A9C2 = {
+			isa = PBXGroup;
+			children = (
+				BB79CFE22B9E84260030A9C2 /* volleyballSched */,
+				BB79CFF92B9E84280030A9C2 /* volleyballSchedTests */,
+				BB79D0032B9E84280030A9C2 /* volleyballSchedUITests */,
+				BB79CFE12B9E84260030A9C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB79CFE12B9E84260030A9C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CFE02B9E84260030A9C2 /* volleyballSched.app */,
+				BB79CFF62B9E84280030A9C2 /* volleyballSchedTests.xctest */,
+				BB79D0002B9E84280030A9C2 /* volleyballSchedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB79CFE22B9E84260030A9C2 /* volleyballSched */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CFE32B9E84260030A9C2 /* AppDelegate.swift */,
+				BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */,
+				BB79CFE72B9E84260030A9C2 /* ViewController.swift */,
+				BB79CFE92B9E84260030A9C2 /* Main.storyboard */,
+				BB79CFEC2B9E84270030A9C2 /* Assets.xcassets */,
+				BB79CFEE2B9E84270030A9C2 /* LaunchScreen.storyboard */,
+				BB79CFF12B9E84270030A9C2 /* Info.plist */,
+			);
+			path = volleyballSched;
+			sourceTree = "<group>";
+		};
+		BB79CFF92B9E84280030A9C2 /* volleyballSchedTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CFFA2B9E84280030A9C2 /* volleyballSchedTests.swift */,
+			);
+			path = volleyballSchedTests;
+			sourceTree = "<group>";
+		};
+		BB79D0032B9E84280030A9C2 /* volleyballSchedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB79D0042B9E84280030A9C2 /* volleyballSchedUITests.swift */,
+				BB79D0062B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift */,
+			);
+			path = volleyballSchedUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB79CFDF2B9E84260030A9C2 /* volleyballSched */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB79D00A2B9E84280030A9C2 /* Build configuration list for PBXNativeTarget "volleyballSched" */;
+			buildPhases = (
+				BB79CFDC2B9E84260030A9C2 /* Sources */,
+				BB79CFDD2B9E84260030A9C2 /* Frameworks */,
+				BB79CFDE2B9E84260030A9C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = volleyballSched;
+			productName = volleyballSched;
+			productReference = BB79CFE02B9E84260030A9C2 /* volleyballSched.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB79CFF52B9E84280030A9C2 /* volleyballSchedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB79D00D2B9E84280030A9C2 /* Build configuration list for PBXNativeTarget "volleyballSchedTests" */;
+			buildPhases = (
+				BB79CFF22B9E84280030A9C2 /* Sources */,
+				BB79CFF32B9E84280030A9C2 /* Frameworks */,
+				BB79CFF42B9E84280030A9C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB79CFF82B9E84280030A9C2 /* PBXTargetDependency */,
+			);
+			name = volleyballSchedTests;
+			productName = volleyballSchedTests;
+			productReference = BB79CFF62B9E84280030A9C2 /* volleyballSchedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB79CFFF2B9E84280030A9C2 /* volleyballSchedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB79D0102B9E84280030A9C2 /* Build configuration list for PBXNativeTarget "volleyballSchedUITests" */;
+			buildPhases = (
+				BB79CFFC2B9E84280030A9C2 /* Sources */,
+				BB79CFFD2B9E84280030A9C2 /* Frameworks */,
+				BB79CFFE2B9E84280030A9C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB79D0022B9E84280030A9C2 /* PBXTargetDependency */,
+			);
+			name = volleyballSchedUITests;
+			productName = volleyballSchedUITests;
+			productReference = BB79D0002B9E84280030A9C2 /* volleyballSchedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB79CFD82B9E84260030A9C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BB79CFDF2B9E84260030A9C2 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					BB79CFF52B9E84280030A9C2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BB79CFDF2B9E84260030A9C2;
+					};
+					BB79CFFF2B9E84280030A9C2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BB79CFDF2B9E84260030A9C2;
+					};
+				};
+			};
+			buildConfigurationList = BB79CFDB2B9E84260030A9C2 /* Build configuration list for PBXProject "volleyballSched" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB79CFD72B9E84260030A9C2;
+			productRefGroup = BB79CFE12B9E84260030A9C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB79CFDF2B9E84260030A9C2 /* volleyballSched */,
+				BB79CFF52B9E84280030A9C2 /* volleyballSchedTests */,
+				BB79CFFF2B9E84280030A9C2 /* volleyballSchedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB79CFDE2B9E84260030A9C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB79CFF02B9E84270030A9C2 /* LaunchScreen.storyboard in Resources */,
+				BB79CFED2B9E84270030A9C2 /* Assets.xcassets in Resources */,
+				BB79CFEB2B9E84260030A9C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB79CFF42B9E84280030A9C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB79CFFE2B9E84280030A9C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB79CFDC2B9E84260030A9C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB79CFE82B9E84260030A9C2 /* ViewController.swift in Sources */,
+				BB79CFE42B9E84260030A9C2 /* AppDelegate.swift in Sources */,
+				BB79CFE62B9E84260030A9C2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB79CFF22B9E84280030A9C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB79CFFB2B9E84280030A9C2 /* volleyballSchedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB79CFFC2B9E84280030A9C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB79D0072B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift in Sources */,
+				BB79D0052B9E84280030A9C2 /* volleyballSchedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB79CFF82B9E84280030A9C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB79CFDF2B9E84260030A9C2 /* volleyballSched */;
+			targetProxy = BB79CFF72B9E84280030A9C2 /* PBXContainerItemProxy */;
+		};
+		BB79D0022B9E84280030A9C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB79CFDF2B9E84260030A9C2 /* volleyballSched */;
+			targetProxy = BB79D0012B9E84280030A9C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB79CFE92B9E84260030A9C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB79CFEA2B9E84260030A9C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB79CFEE2B9E84270030A9C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB79CFEF2B9E84270030A9C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB79D0082B9E84280030A9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB79D0092B9E84280030A9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB79D00B2B9E84280030A9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Y5C4NQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = volleyballSched/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.volleyballSched;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB79D00C2B9E84280030A9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Y5C4NQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = volleyballSched/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.volleyballSched;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB79D00E2B9E84280030A9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Y5C4NQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.volleyballSchedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/volleyballSched.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/volleyballSched";
+			};
+			name = Debug;
+		};
+		BB79D00F2B9E84280030A9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Y5C4NQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.volleyballSchedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/volleyballSched.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/volleyballSched";
+			};
+			name = Release;
+		};
+		BB79D0112B9E84280030A9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Y5C4NQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.volleyballSchedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = volleyballSched;
+			};
+			name = Debug;
+		};
+		BB79D0122B9E84280030A9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Y5C4NQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.volleyballSchedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = volleyballSched;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB79CFDB2B9E84260030A9C2 /* Build configuration list for PBXProject "volleyballSched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB79D0082B9E84280030A9C2 /* Debug */,
+				BB79D0092B9E84280030A9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB79D00A2B9E84280030A9C2 /* Build configuration list for PBXNativeTarget "volleyballSched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB79D00B2B9E84280030A9C2 /* Debug */,
+				BB79D00C2B9E84280030A9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB79D00D2B9E84280030A9C2 /* Build configuration list for PBXNativeTarget "volleyballSchedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB79D00E2B9E84280030A9C2 /* Debug */,
+				BB79D00F2B9E84280030A9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB79D0102B9E84280030A9C2 /* Build configuration list for PBXNativeTarget "volleyballSchedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB79D0112B9E84280030A9C2 /* Debug */,
+				BB79D0122B9E84280030A9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB79CFD82B9E84260030A9C2 /* Project object */;
+}
