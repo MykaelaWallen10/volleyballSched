@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t8i-VJ-kgz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t8i-VJ-kgz">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -222,11 +222,28 @@
                     <navigationItem key="navigationItem" id="C5R-cs-zfX"/>
                     <connections>
                         <outlet property="tableViewOutlet" destination="bTm-6k-Axh" id="DE7-0K-cNF"/>
+                        <segue destination="fMm-D2-vkL" kind="show" identifier="toDetailPage" id="ddC-5y-cqF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4C-fD-dbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2546" y="4"/>
+        </scene>
+        <!--View Controller Detail2-->
+        <scene sceneID="XnT-uG-oz3">
+            <objects>
+                <viewController id="fMm-D2-vkL" customClass="ViewControllerDetail2" customModule="volleyballSched" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zo1-cK-j3A">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jxS-sB-ndd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LhI-eb-hMG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ac6-qR-cJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3297" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ewZ-YA-YGR">

@@ -37,6 +37,13 @@ class Schedule2ViewController: UIViewController, UITableViewDelegate, UITableVie
                return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         
+        performSegue(withIdentifier: "toDetailPage", sender: nil)
+            
+    }
+    
 
 
 
