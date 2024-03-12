@@ -16,6 +16,8 @@
 		BB79CFFB2B9E84280030A9C2 /* volleyballSchedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFFA2B9E84280030A9C2 /* volleyballSchedTests.swift */; };
 		BB79D0052B9E84280030A9C2 /* volleyballSchedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79D0042B9E84280030A9C2 /* volleyballSchedUITests.swift */; };
 		BB79D0072B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79D0062B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift */; };
+		BB83B61A2B9FD66800DF3923 /* editingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83B6192B9FD66800DF3923 /* editingViewController.swift */; };
+		BB83B6202B9FDAE800DF3923 /* Schedule2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83B61F2B9FDAE800DF3923 /* Schedule2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BB79D0002B9E84280030A9C2 /* volleyballSchedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = volleyballSchedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB79D0042B9E84280030A9C2 /* volleyballSchedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volleyballSchedUITests.swift; sourceTree = "<group>"; };
 		BB79D0062B9E84280030A9C2 /* volleyballSchedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volleyballSchedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB83B6192B9FD66800DF3923 /* editingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editingViewController.swift; sourceTree = "<group>"; };
+		BB83B61F2B9FDAE800DF3923 /* Schedule2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */,
 				BB79CFE72B9E84260030A9C2 /* ViewController.swift */,
 				BB79CFE92B9E84260030A9C2 /* Main.storyboard */,
+				BB83B61F2B9FDAE800DF3923 /* Schedule2ViewController.swift */,
+				BB83B6192B9FD66800DF3923 /* editingViewController.swift */,
 				BB79CFEC2B9E84270030A9C2 /* Assets.xcassets */,
 				BB79CFEE2B9E84270030A9C2 /* LaunchScreen.storyboard */,
 				BB79CFF12B9E84270030A9C2 /* Info.plist */,
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB83B6202B9FDAE800DF3923 /* Schedule2ViewController.swift in Sources */,
 				BB79CFE82B9E84260030A9C2 /* ViewController.swift in Sources */,
+				BB83B61A2B9FD66800DF3923 /* editingViewController.swift in Sources */,
 				BB79CFE42B9E84260030A9C2 /* AppDelegate.swift in Sources */,
 				BB79CFE62B9E84260030A9C2 /* SceneDelegate.swift in Sources */,
 			);
