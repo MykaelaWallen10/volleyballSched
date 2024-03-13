@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB18BC242BA0A0D1003CDF67 /* ViewControllerDetail2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18BC232BA0A0D1003CDF67 /* ViewControllerDetail2.swift */; };
+		BB2BF3BB2BA1EE9300BDDBF0 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2BF3BA2BA1EE9300BDDBF0 /* JoinViewController.swift */; };
 		BB79CFE42B9E84260030A9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFE32B9E84260030A9C2 /* AppDelegate.swift */; };
 		BB79CFE62B9E84260030A9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */; };
 		BB79CFE82B9E84260030A9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CFE72B9E84260030A9C2 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		BB18BC232BA0A0D1003CDF67 /* ViewControllerDetail2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetail2.swift; sourceTree = "<group>"; };
+		BB2BF3BA2BA1EE9300BDDBF0 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		BB79CFE02B9E84260030A9C2 /* volleyballSched.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = volleyballSched.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB79CFE32B9E84260030A9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				BB79CFE32B9E84260030A9C2 /* AppDelegate.swift */,
+				BB2BF3BA2BA1EE9300BDDBF0 /* JoinViewController.swift */,
 				BB79CFE52B9E84260030A9C2 /* SceneDelegate.swift */,
 				BB79CFE72B9E84260030A9C2 /* ViewController.swift */,
 				BB79CFE92B9E84260030A9C2 /* Main.storyboard */,
@@ -273,6 +276,7 @@
 				BB83B61A2B9FD66800DF3923 /* editingViewController.swift in Sources */,
 				BB79CFE42B9E84260030A9C2 /* AppDelegate.swift in Sources */,
 				BB79CFE62B9E84260030A9C2 /* SceneDelegate.swift in Sources */,
+				BB2BF3BB2BA1EE9300BDDBF0 /* JoinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,20 @@
 //
 import UIKit
 
+class OneNameAndPassword {
+    var groupNameClass : String
+    var groupPasswordClass : String
+    
+    init(groupNameClass: String,
+        groupPasswordClass: String) {
+        self.groupNameClass = groupNameClass
+        self.groupPasswordClass = groupPasswordClass
+    }
+}
+class manyNameandPasswords{
+    static var groupInfoClass = [OneNameAndPassword]()
+}
+
 class oneTournament{
    
     var name : String
@@ -23,6 +37,8 @@ class oneTournament{
 }
 
 class Tournaments{
+    static var groupNamesTournaments = ""
+    static var groupPasswordTournaments = ""
     static var manyTournaments = [oneTournament]()
     
     
@@ -34,6 +50,10 @@ class Tournaments{
 class editingViewController: UIViewController {
     
     @IBOutlet weak var tourneyNametextfeild: UITextField!
+    
+    @IBOutlet weak var groupName: UITextField!
+    
+    @IBOutlet weak var passwordTextfeild: UITextField!
     
     @IBOutlet weak var dateTextFeild: UITextField!
     
@@ -65,6 +85,18 @@ class editingViewController: UIViewController {
         dateTextFeild.text = ""
         timeTextFeild.text = ""
         aesLinktextFeild.text = ""
+        
+    }
+    
+    
+    @IBAction func enterNamePass(_ sender: UIButton) {
+        var groupInfo = OneNameAndPassword(groupNameClass: groupName.text!, groupPasswordClass: passwordTextfeild.text!)
+        
+        manyNameandPasswords.groupInfoClass.append(groupInfo)
+        
+        Tournaments.groupNamesTournaments = groupName.text!
+        Tournaments.groupPasswordTournaments = passwordTextfeild.text!
+        
         
     }
     

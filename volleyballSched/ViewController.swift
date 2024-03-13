@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func joinAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "toJoinScreen", sender: nil)
+    }
+    
+    
+    
 
 }
 
