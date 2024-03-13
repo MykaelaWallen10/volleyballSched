@@ -11,7 +11,7 @@ class Schedule2ViewController: UIViewController, UITableViewDelegate, UITableVie
   
     
     @IBOutlet weak var tableViewOutlet: UITableView!
-    
+    var selectedTournament : oneTournament!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +40,20 @@ class Schedule2ViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          
+        
+        selectedTournament = Tournaments.manyTournaments[indexPath.row]
+        
         performSegue(withIdentifier: "toDetailPage", sender: nil)
+        
+        
+        
             
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! ViewControllerDetail2
+        nvc.incoming = selectedTournament
+        
     }
     
 
