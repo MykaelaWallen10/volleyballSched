@@ -6,19 +6,6 @@
 //
 import UIKit
 
-class OneNameAndPassword {
-    var groupNameClass : String
-    var groupPasswordClass : String
-    
-    init(groupNameClass: String,
-        groupPasswordClass: String) {
-        self.groupNameClass = groupNameClass
-        self.groupPasswordClass = groupPasswordClass
-    }
-}
-class manyNameandPasswords{
-    static var groupInfoClass = [OneNameAndPassword]()
-}
 
 class oneTournament{
    
@@ -43,6 +30,22 @@ class Tournaments{
     
     
 }
+
+class OneNameAndPassword {
+     var groupNameClass : String
+     var groupPasswordClass : String
+    static var thisGroupsTournaments = Tournaments.self
+    
+    init(groupNameClass: String,
+        groupPasswordClass: String) {
+        self.groupNameClass = groupNameClass
+        self.groupPasswordClass = groupPasswordClass
+    }
+}
+class manyNameandPasswords{
+    static var groupInfoClass = [OneNameAndPassword]()
+}
+
 
 
 
@@ -96,7 +99,7 @@ class editingViewController: UIViewController {
         
         Tournaments.groupNamesTournaments = groupName.text!
         Tournaments.groupPasswordTournaments = passwordTextfeild.text!
-        
+        print("password saved into class")
         
     }
     

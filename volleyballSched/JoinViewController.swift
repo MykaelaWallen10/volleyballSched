@@ -25,9 +25,15 @@ class JoinViewController: UIViewController {
         for i in 0 ..< manyNameandPasswords.groupInfoClass.count{
             
             if((groupEntry2.text == manyNameandPasswords.groupInfoClass[i].groupNameClass) && (passwordyEntry2.text == manyNameandPasswords.groupInfoClass[i].groupPasswordClass)){
-                
+                print("going over now")
+               performSegue(withIdentifier: "toActualSchedule", sender: nil)
                 
             }
+            else{
+               print("wrong password")
+            }
+            
+            
             
             
             
