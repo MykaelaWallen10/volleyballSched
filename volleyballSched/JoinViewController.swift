@@ -22,9 +22,22 @@ class JoinViewController: UIViewController {
 
     @IBAction func joinGroupAction(_ sender: Any) {
         
-        for i in 0 ..< manyNameandPasswords.groupInfoClass.count{
+        
+        for (key, value) in EachGroupsTournaments.nameAndPassDic{
+            if((key == groupEntry2.text!) && (value == passwordyEntry2.text!)){
+                print("going over now")
+               performSegue(withIdentifier: "toActualSchedule", sender: nil)
+                
+            }
+       
+        }
+        
+        
+        
+        
+        for i in 0 ..< EachGroupsTournaments.nameAndPassDic.count{
             
-            if((groupEntry2.text == manyNameandPasswords.groupInfoClass[i].groupNameClass) && (passwordyEntry2.text == manyNameandPasswords.groupInfoClass[i].groupPasswordClass)){
+            if((groupEntry2.text == EachGroupsTournaments.nameAndPassDic[]) && (passwordyEntry2.text == EachGroupsTournaments.nameAndPassDic[i].value)){
                 print("going over now")
                performSegue(withIdentifier: "toActualSchedule", sender: nil)
                 

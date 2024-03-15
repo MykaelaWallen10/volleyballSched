@@ -7,6 +7,12 @@
 import UIKit
 
 
+class EachGroupsTournaments{
+   static var groupsTourney = [Tournaments]()
+    static var nameAndPassDic = [String: String]()
+    
+}
+
 class oneTournament{
    
     var name : String
@@ -24,10 +30,11 @@ class oneTournament{
 }
 
 class Tournaments{
-    static var groupNamesTournaments = ""
-    static var groupPasswordTournaments = ""
-    static var manyTournaments = [oneTournament]()
-    
+
+    var manyTournaments : [oneTournament]
+    init(manyTournaments: [oneTournament]) {
+        self.manyTournaments = manyTournaments
+    }
     
 }
 
@@ -52,6 +59,8 @@ class manyNameandPasswords{
 
 class editingViewController: UIViewController {
     
+    
+
     @IBOutlet weak var tourneyNametextfeild: UITextField!
     
     @IBOutlet weak var groupName: UITextField!
@@ -74,14 +83,18 @@ class editingViewController: UIViewController {
 
     @IBAction func tournamentInfoAction(_ sender: UIButton) {
         
-        var nameText = tourneyNametextfeild.text!
-        var dateText = dateTextFeild.text!
-        var timetext = timeTextFeild.text!
-        var aesText = aesLinktextFeild.text!
+        let nameText = tourneyNametextfeild.text!
+        let dateText = dateTextFeild.text!
+        let timetext = timeTextFeild.text!
+        let aesText = aesLinktextFeild.text!
+        
+        var theTeamsTourneyArray = [oneTournament]()
         
         var theTournament = oneTournament(name: nameText, date: dateText, time: timetext, link: aesText)
+        theTeamsTourneyArray.append(theTournament)
+        var theTeamsTournaments = Tournaments(manyTournaments: theTeamsTourneyArray)
         
-        Tournaments.manyTournaments.append(theTournament)
+        EachGroupsTournaments.groupsTourney.append(theTeamsTournaments)
         
         
         tourneyNametextfeild.text = ""
@@ -97,8 +110,9 @@ class editingViewController: UIViewController {
         
         manyNameandPasswords.groupInfoClass.append(groupInfo)
         
-        Tournaments.groupNamesTournaments = groupName.text!
-        Tournaments.groupPasswordTournaments = passwordTextfeild.text!
+        EachGroupsTournaments.nameAndPassDic.updateValue(groupName.text!, forKey: passwordTextfeild.text!)
+        
+       
         print("password saved into class")
         
     }
