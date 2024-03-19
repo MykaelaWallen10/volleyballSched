@@ -27,14 +27,15 @@ class actualScheduleViewController: UIViewController, UITableViewDelegate, UITab
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return OneNameAndPassword.thisGroupsTournaments.manyTournaments.count
+        return EachGroupsTournaments.groupsTourney[EachGroupsTournaments.groupsTourney.count-1].manyTournaments.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
-        cell.textLabel?.text = "\(OneNameAndPassword.thisGroupsTournaments.manyTournaments[indexPath.row].name)"
+        
+        cell.textLabel?.text = "\(EachGroupsTournaments.groupsTourney[indexPath.row].manyTournaments[indexPath.row].name)"
                return cell
     }
     
@@ -42,7 +43,7 @@ class actualScheduleViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          
         
-        selectedTournament1 = OneNameAndPassword.thisGroupsTournaments.manyTournaments[indexPath.row]
+        selectedTournament1 = EachGroupsTournaments.groupsTourney[indexPath.row].manyTournaments[indexPath.row]
         
         performSegue(withIdentifier: "toDetailPageFr", sender: nil)
         

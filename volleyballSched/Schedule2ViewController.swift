@@ -26,22 +26,26 @@ class Schedule2ViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Tournaments.manyTournaments.count
+        return EachGroupsTournaments.groupsTourney[EachGroupsTournaments.groupsTourney.count-1].manyTournaments.count
+        //editingViewController.theTeamsTourneyArray.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
-        cell.textLabel?.text = "\(Tournaments.manyTournaments[indexPath.row].name)"
+        
+        cell.textLabel?.text = "\(EachGroupsTournaments.groupsTourney[indexPath.row].manyTournaments[indexPath.row].name)"
                return cell
+        
+        //(Tournaments.manyTournaments[indexPath.row].name)
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          
         
-        selectedTournament = Tournaments.manyTournaments[indexPath.row]
+        selectedTournament = EachGroupsTournaments.groupsTourney[indexPath.row].manyTournaments[indexPath.row]
         
         performSegue(withIdentifier: "toDetailPage", sender: nil)
         

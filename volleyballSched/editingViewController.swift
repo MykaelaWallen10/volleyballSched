@@ -32,6 +32,7 @@ class oneTournament{
 class Tournaments{
 
     var manyTournaments : [oneTournament]
+    
     init(manyTournaments: [oneTournament]) {
         self.manyTournaments = manyTournaments
     }
@@ -59,7 +60,6 @@ class manyNameandPasswords{
 
 class editingViewController: UIViewController {
     
-    
 
     @IBOutlet weak var tourneyNametextfeild: UITextField!
     
@@ -72,12 +72,21 @@ class editingViewController: UIViewController {
     @IBOutlet weak var timeTextFeild: UITextField!
     
     @IBOutlet weak var aesLinktextFeild: UITextField!
-    
+     static var theTeamsTourneyArray = [oneTournament]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+       
         // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print("should be clearing array")
+        for i in 0..<editingViewController.theTeamsTourneyArray.count{
+            
+        }
+        editingViewController.theTeamsTourneyArray = [oneTournament]()
+        
     }
     
 
@@ -88,11 +97,14 @@ class editingViewController: UIViewController {
         let timetext = timeTextFeild.text!
         let aesText = aesLinktextFeild.text!
         
-        var theTeamsTourneyArray = [oneTournament]()
+       
         
         var theTournament = oneTournament(name: nameText, date: dateText, time: timetext, link: aesText)
-        theTeamsTourneyArray.append(theTournament)
-        var theTeamsTournaments = Tournaments(manyTournaments: theTeamsTourneyArray)
+        
+       
+        editingViewController.theTeamsTourneyArray.append(theTournament)
+        
+        var theTeamsTournaments = Tournaments(manyTournaments: editingViewController.theTeamsTourneyArray)
         
         EachGroupsTournaments.groupsTourney.append(theTeamsTournaments)
         
@@ -106,6 +118,7 @@ class editingViewController: UIViewController {
     
     
     @IBAction func enterNamePass(_ sender: UIButton) {
+        
         var groupInfo = OneNameAndPassword(groupNameClass: groupName.text!, groupPasswordClass: passwordTextfeild.text!)
         
         manyNameandPasswords.groupInfoClass.append(groupInfo)

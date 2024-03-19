@@ -29,29 +29,17 @@ class JoinViewController: UIViewController {
                performSegue(withIdentifier: "toActualSchedule", sender: nil)
                 
             }
+            
+            else{
+                print("wrong password")
+            }
        
         }
         
         
         
         
-        for i in 0 ..< EachGroupsTournaments.nameAndPassDic.count{
-            
-            if((groupEntry2.text == EachGroupsTournaments.nameAndPassDic[]) && (passwordyEntry2.text == EachGroupsTournaments.nameAndPassDic[i].value)){
-                print("going over now")
-               performSegue(withIdentifier: "toActualSchedule", sender: nil)
-                
-            }
-            else{
-               print("wrong password")
-            }
-            
-            
-            
-            
-            
-            
-        }
+
     }
     
 }
