@@ -39,26 +39,14 @@ class Tournaments{
     
 }
 
-class OneNameAndPassword {
-     var groupNameClass : String
-     var groupPasswordClass : String
-    static var thisGroupsTournaments = Tournaments.self
-    
-    init(groupNameClass: String,
-        groupPasswordClass: String) {
-        self.groupNameClass = groupNameClass
-        self.groupPasswordClass = groupPasswordClass
-    }
-}
-class manyNameandPasswords{
-    static var groupInfoClass = [OneNameAndPassword]()
-}
 
 
 
 
 
 class editingViewController: UIViewController {
+    
+   
     
 
     @IBOutlet weak var tourneyNametextfeild: UITextField!
@@ -73,24 +61,22 @@ class editingViewController: UIViewController {
     
     @IBOutlet weak var aesLinktextFeild: UITextField!
      static var theTeamsTourneyArray = [oneTournament]()
+    
+  //  static var theTeamsTournaments = [Tournaments]()
+    
+  // static var theTeamsTournaments = Tournaments(manyTournaments: editingViewController.theTeamsTourneyArray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("clearing now")
+        editingViewController.theTeamsTourneyArray = [oneTournament]()
        
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(_ animated: Bool) {
-        print("should be clearing array")
-        for i in 0..<editingViewController.theTeamsTourneyArray.count{
-            
-        }
-        editingViewController.theTeamsTourneyArray = [oneTournament]()
-        
-    }
-    
+ 
 
     @IBAction func tournamentInfoAction(_ sender: UIButton) {
+        
         
         let nameText = tourneyNametextfeild.text!
         let dateText = dateTextFeild.text!
@@ -103,39 +89,35 @@ class editingViewController: UIViewController {
         
        
         editingViewController.theTeamsTourneyArray.append(theTournament)
+        tourneyNametextfeild.text = ""
+        dateTextFeild.text = ""
+        timeTextFeild.text = ""
+        aesLinktextFeild.text = ""
+        
+        //password stuff
+        
+        EachGroupsTournaments.nameAndPassDic[groupName.text!] = passwordTextfeild.text!
+        
+    
+  
+        print(EachGroupsTournaments.nameAndPassDic)
+        print("password saved into class")
+    
+        
+    }
+    
+    
+
+    @IBAction func toScheduleAction(_ sender: UIButton) {
+        
         
         var theTeamsTournaments = Tournaments(manyTournaments: editingViewController.theTeamsTourneyArray)
         
         EachGroupsTournaments.groupsTourney.append(theTeamsTournaments)
         
         
-        tourneyNametextfeild.text = ""
-        dateTextFeild.text = ""
-        timeTextFeild.text = ""
-        aesLinktextFeild.text = ""
-        
-    }
-    
-    
-    @IBAction func enterNamePass(_ sender: UIButton) {
-        
-        var groupInfo = OneNameAndPassword(groupNameClass: groupName.text!, groupPasswordClass: passwordTextfeild.text!)
-        
-        manyNameandPasswords.groupInfoClass.append(groupInfo)
-        
-        EachGroupsTournaments.nameAndPassDic.updateValue(groupName.text!, forKey: passwordTextfeild.text!)
-        
-       
-        print("password saved into class")
-        
-    }
-    
-    
-    
- 
-    @IBAction func toScheduleAction(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "toTableViewScreen", sender: nil)
+
+  performSegue(withIdentifier: "toTableViewScreen", sender: nil)
         
         
         

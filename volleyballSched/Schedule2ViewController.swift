@@ -26,16 +26,17 @@ class Schedule2ViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return EachGroupsTournaments.groupsTourney[EachGroupsTournaments.groupsTourney.count-1].manyTournaments.count
-        //editingViewController.theTeamsTourneyArray.count
+        return
+        editingViewController.theTeamsTourneyArray.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        cell.textLabel?.text = "\(editingViewController.theTeamsTourneyArray[indexPath.row].name)"
         
-        cell.textLabel?.text = "\(EachGroupsTournaments.groupsTourney[indexPath.row].manyTournaments[indexPath.row].name)"
+//        cell.textLabel?.text = "\(EachGroupsTournaments.groupsTourney[editingViewController.counting].manyTournaments[indexPath.row].name)"
                return cell
         
         //(Tournaments.manyTournaments[indexPath.row].name)
@@ -45,7 +46,9 @@ class Schedule2ViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          
         
-        selectedTournament = EachGroupsTournaments.groupsTourney[indexPath.row].manyTournaments[indexPath.row]
+        selectedTournament = editingViewController.theTeamsTourneyArray[indexPath.row]
+        
+        /*EachGroupsTournaments.groupsTourney[editingViewController.counting].manyTournaments[indexPath.row-1]*/
         
         performSegue(withIdentifier: "toDetailPage", sender: nil)
         
