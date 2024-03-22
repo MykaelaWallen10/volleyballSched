@@ -15,7 +15,10 @@ class JoinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(EachGroupsTournaments.nameAndPassDic)
+        for i in 0 ..< EachGroupsTournaments.nameAndPass.count{
+            print(EachGroupsTournaments.nameAndPass[i].name)
+            print(EachGroupsTournaments.nameAndPass[i].password)
+        }
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -29,28 +32,27 @@ class JoinViewController: UIViewController {
         
        
         
-        for (key, value) in EachGroupsTournaments.nameAndPassDic{
-            print(key)
-            print(value)
-          
+        
+        for i in 0..<EachGroupsTournaments.nameAndPass.count{
             
-            
-            if((key == groupEntry2.text!)&&((value == passwordyEntry2.text!))){
-                print("name correct")
-                 performSegue(withIdentifier: "toActualSchedule", sender: nil)
+            if((EachGroupsTournaments.nameAndPass[i].name == groupEntry2.text!)&&(EachGroupsTournaments.nameAndPass[i].password == passwordyEntry2.text!)){
+                print("name correct and pass correct")
                 
-                break
+                JoinViewController.counting = i
                 
+                print(JoinViewController.counting)
+                
+                performSegue(withIdentifier: "toActualSchedule", sender: nil)
             }
             else{
-                print("adding to JoinViewController")
-                JoinViewController.counting = JoinViewController.counting + 1
-                print("wrong password")
-                
+              
+                print("wrong!")
             }
-       
-           
+            
+          
         }
+        
+       
         
         
         

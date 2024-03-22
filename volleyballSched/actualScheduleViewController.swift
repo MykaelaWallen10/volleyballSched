@@ -31,7 +31,7 @@ class actualScheduleViewController: UIViewController, UITableViewDelegate, UITab
         print("\(JoinViewController.counting) the count variable ")
        // print("\(EachGroupsTournaments.groupsTourney[JoinViewController.counting].manyTournaments.count + 1)  the amount of rows its supposed to show ")
         
-        return EachGroupsTournaments.groupsTourney[JoinViewController.counting].manyTournaments.count
+        return EachGroupsTournaments.groupsTourney[JoinViewController.counting].count
         //JoinViewController.counting
     }
     
@@ -39,7 +39,9 @@ class actualScheduleViewController: UIViewController, UITableViewDelegate, UITab
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
         
-        cell.textLabel?.text = "\(EachGroupsTournaments.groupsTourney[JoinViewController.counting].manyTournaments[indexPath.row].name)"
+        cell.textLabel?.text =""\(EachGroupsTournaments.groupsTourney[JoinViewController.counting].)
+        
+       // "\(EachGroupsTournaments.groupsTourney[JoinViewController.counting].manyTournaments[indexPath.row].name)"
                return cell
     }
     
